@@ -1,0 +1,15 @@
+[[constraint]]
+  name = "github.com/go-sql-driver/mysql"
+  version = "1.5.0"
+
+[[constraint]]
+  name = "github.com/labstack/echo"
+  version = "3.3.10"
+
+[[constraint]]
+  name = "upper.io/db.v3"
+  version = "3.6.4"
+
+[prune]
+  go-tests = true
+  unused-packages = true

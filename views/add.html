@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %} Adicionar um novo usuário {% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <div class="jumbotron" style="margin-top: 200px;">
+        <div class="container">
+            <h1 class="text-center">Adicionar Usuário</h1>
+            
+            <form action="/v1/insert" method="POST" class="form-horizontal" role="form">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite um nome" required/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Digite um email" requ/>
+                        </div>
+                    </div>
+                </div>
+    
+                <button type="submit" value="salvar" class="btn btn-success">Salvar</button>
+                <a class="btn btn-info" href="/">Cancelar</a>
+
+            </form>
+                        
+        </div>
+    </div>
+</div>
+
+{% endblock %}
